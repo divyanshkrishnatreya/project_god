@@ -1,0 +1,18 @@
+chapter_state:
+  chapter_id: string
+  chapter_number: integer
+  avatar: string
+  total_pages: 10
+  approved_pages: integer
+  remaining_pages: integer
+  chapter_thesis: string
+  emotional_arc: list
+  completion_requirements: list
+  current_environment: string
+  current_time_of_day: string
+  current_weather: string
+  active_characters: list
+  current_props: list
+  current_injuries_or_fatigue: list
+  open_questions: list
+  next_page_goal: string

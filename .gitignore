@@ -1,0 +1,27 @@
+# OS / editor noise
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+*.log
+
+# Python cache, if tooling is added later
+__pycache__/
+*.pyc
+
+# Generated output packages
+exports/
+chapters/*/exports/
+
+# Raw generation staging areas
+assets/incoming/
+assets/rejected/
+chapters/*/assets/incoming/
+
+# Local automation/runtime scratch files if added later
+automation/runtime_state.local.yaml

@@ -1,0 +1,73 @@
+commands:
+  generate_next_page:
+    purpose: create the next page blueprint and final prompt from existing canon and chapter state
+    read_first:
+      - continuity/chapter_memory.md
+      - continuity/series_memory.md
+      - characters/
+      - style/
+      - lore/
+      - latest approved page review
+    outputs:
+      - page objective
+      - panel breakdown
+      - emotional direction
+      - continuity safeguards
+      - final image-generation prompt
+    updates_required_after_approval:
+      - chapters/chapter_xx_*/reviews/
+      - continuity/chapter_memory.md
+      - references/reference_index.md
+
+  analyze_continuity:
+    purpose: review a generated page for style drift, lore drift, pacing issues, and visual inconsistency
+    checks:
+      - character identity
+      - costume continuity
+      - environment continuity
+      - emotional progression
+      - mythology respect
+      - page-to-page carry-forward details
+    outputs:
+      - continuity report
+      - drift flags
+      - correction suggestions
+      - approval recommendation
+
+  update_chapter_memory:
+    purpose: update active chapter memory after a page is approved or revised
+    required_inputs:
+      - approved page number
+      - page objective
+      - final beat
+      - carry-forward details
+      - physical state changes
+      - emotional changes
+    updates:
+      - continuity/chapter_memory.md
+      - chapter-level page review file
+
+  generate_panel_breakdown:
+    purpose: create a pacing-aware panel map before final prompt generation
+    inputs:
+      - chapter state
+      - page role
+      - emotional target
+      - continuity constraints
+    outputs:
+      - ordered panel list
+      - shot types
+      - acting notes
+      - visual emphasis notes
+
+  generate_animation_notes:
+    purpose: translate a page or chapter into shot-minded adaptation notes for future video workflows
+    inputs:
+      - approved page or chapter
+      - current cinematic language rules
+    outputs:
+      - shot intent
+      - camera logic
+      - motion emphasis
+      - sound-implied atmosphere
+      - transition notes

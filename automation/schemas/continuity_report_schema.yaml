@@ -1,0 +1,19 @@
+continuity_report:
+  chapter_id: string
+  page_number: integer
+  asset_name: string
+  overall_result: approve_or_revise
+  checks:
+    facial_consistency: pass_or_warn_or_fail
+    costume_consistency: pass_or_warn_or_fail
+    environment_consistency: pass_or_warn_or_fail
+    emotional_continuity: pass_or_warn_or_fail
+    mythology_integrity: pass_or_warn_or_fail
+    pacing_alignment: pass_or_warn_or_fail
+    style_alignment: pass_or_warn_or_fail
+  findings:
+    - severity: high_or_medium_or_low
+      category: string
+      note: string
+      correction: string
+  carry_forward_updates: list

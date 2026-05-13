@@ -1,0 +1,119 @@
+project:
+  title: Leela.exe
+  type: mythology-based manga and future anime production pipeline
+  version: 1.0
+  status: active
+
+series:
+  total_chapters: 10
+  chapter_page_count: 10
+  structure_rule: one_dashavatar_per_chapter
+  chapter_resolution_rule: each_chapter_must_resolve_its_avatar_story
+  active_chapter: 1
+  active_avatar: Matsya
+
+canon_sources:
+  lore:
+    - lore/universe_rules.md
+    - lore/avatar_system.md
+    - lore/dharma_engine.md
+  characters:
+    - characters/vishnu.md
+    - characters/matsya.md
+    - characters/manu.md
+  style:
+    - style/art_direction.md
+    - style/panel_rules.md
+    - style/color_language.md
+  continuity:
+    - continuity/series_memory.md
+    - continuity/chapter_memory.md
+    - continuity/continuity_rules.md
+    - continuity/memory_architecture.md
+
+chapter_roster:
+  - id: chapter_01_matsya
+    number: 1
+    avatar: Matsya
+    status: active
+  - id: chapter_02_kurma
+    number: 2
+    avatar: Kurma
+    status: planned
+  - id: chapter_03_varaha
+    number: 3
+    avatar: Varaha
+    status: planned
+  - id: chapter_04_narasimha
+    number: 4
+    avatar: Narasimha
+    status: planned
+  - id: chapter_05_vamana
+    number: 5
+    avatar: Vamana
+    status: planned
+  - id: chapter_06_parashurama
+    number: 6
+    avatar: Parashurama
+    status: planned
+  - id: chapter_07_rama
+    number: 7
+    avatar: Rama
+    status: planned
+  - id: chapter_08_krishna
+    number: 8
+    avatar: Krishna
+    status: planned
+  - id: chapter_09_buddha
+    number: 9
+    avatar: Buddha
+    status: planned
+  - id: chapter_10_kalki
+    number: 10
+    avatar: Kalki
+    status: planned
+
+folders:
+  canon:
+    - lore
+    - characters
+    - style
+  runtime_memory:
+    - continuity
+    - chapters
+  operations:
+    - workflows
+    - templates
+    - prompts
+    - qa
+  automation:
+    - automation
+    - automation/schemas
+  assets:
+    - assets/incoming/pages
+    - assets/approved/pages
+    - assets/references/characters
+    - assets/references/environments
+    - assets/references/style
+    - assets/references/motifs
+    - assets/rejected
+  exports:
+    - exports/manga_pages
+    - exports/chapter_packages
+    - exports/animation_shots
+    - exports/video_storyboards
+
+naming:
+  chapter_pattern: chapter_XX_avatar
+  page_asset_pattern: chapter_XX_page_YY.ext
+  page_review_pattern: page_YY_review.md
+  page_blueprint_pattern: page_YY_blueprint.md
+  prompt_pattern: page_YY_prompt.md
+
+future_integrations:
+  - continuity-aware image generation
+  - character LoRA training
+  - style LoRA training
+  - ComfyUI workflows
+  - page-to-shot adaptation
+  - anime trailer production

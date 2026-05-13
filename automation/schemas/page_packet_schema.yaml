@@ -1,0 +1,25 @@
+page_packet:
+  chapter_id: string
+  page_number: integer
+  status: planned_or_generated_or_approved
+  role_in_chapter: string
+  objective: string
+  continuity_inputs:
+    previous_page_final_beat: string
+    active_character_files: list
+    active_style_files: list
+    active_lore_files: list
+  panel_breakdown:
+    - panel_number: integer
+      shot_type: string
+      subject: string
+      action: string
+      emotional_beat: string
+      continuity_note: string
+  emotional_direction: string
+  continuity_safeguards: list
+  prompt_output: string
+  approval_notes:
+    status: pending_or_approved_or_revise
+    drift_flags: list
+    carry_forward_notes: list
