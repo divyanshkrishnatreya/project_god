@@ -25,3 +25,20 @@ chapters/*/assets/incoming/
 
 # Local automation/runtime scratch files if added later
 automation/runtime_state.local.yaml
+
+
+# Workspace safety ignores
+node_modules/
+dist/
+build/
+.next/
+out/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.venv/
+venv/
+env/
+*.sqlite3
