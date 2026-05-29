@@ -1,10 +1,11 @@
 # Page 1 Review - The First Login
 
 ## Status
-Treated as current continuity baseline unless replaced or revised by the user.
+Legacy root-level baseline summary. The canonical production review now lives at `reviews/page_01_review.md`.
 
 ## File
-- source image: `9da91037-a938-4ca8-8a74-b7c26e12288f.png`
+- canonical approved asset: `assets/approved/pages/chapter_01_page_01.png`
+- original uploaded source: `seed_reference.png`
 
 ## What Page 1 Accomplishes Well
 1. It clearly establishes the project's hook: Vishnu as child-admin of a cosmic simulation.

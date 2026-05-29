@@ -1,0 +1,49 @@
+dataset:
+  id:
+  name:
+  task_type: lora_or_qlora
+  target:
+  version: v001
+  status: draft
+
+source:
+  source_paths: []
+  reference_index_entries: []
+  approval_review_paths: []
+  excluded_paths: []
+
+canon:
+  chapter_ids: []
+  character_targets: []
+  environment_targets: []
+  motif_targets: []
+  style_targets: []
+
+preparation:
+  captioning_status: not_started
+  metadata_status: not_started
+  dedupe_status: not_started
+  crop_status: not_started
+  train_eval_split_status: not_started
+
+splits:
+  train_count: 0
+  eval_count: 0
+  holdout_count: 0
+
+training_notes:
+  trigger_tokens: []
+  known_drift_risks: []
+  negative_reference_notes: []
+  intended_base_model:
+
+evaluation:
+  eval_prompt_path:
+  expected_behavior:
+  failure_cases_to_check: []
+
+lineage:
+  created_by:
+  created_date:
+  updated_date:
+  notes:

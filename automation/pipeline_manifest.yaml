@@ -114,6 +114,10 @@ future_integrations:
   - continuity-aware image generation
   - character LoRA training
   - style LoRA training
+  - environment and motif LoRA training
+  - QLoRA continuity reviewer
+  - QLoRA prompt compiler
+  - dataset and model registry manifests
   - ComfyUI workflows
   - page-to-shot adaptation
   - anime trailer production

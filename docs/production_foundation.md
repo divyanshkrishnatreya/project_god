@@ -5,6 +5,8 @@ This document defines the optimal long-term project foundation for Leela.exe as 
 
 The goal is not to store random prompts. The goal is to build a stable production system that can scale from page generation to semi-automation to animation preparation.
 
+The same foundation should also support AI/ML engineering: LoRA-ready visual datasets, QLoRA-ready text examples, model evaluation packs, and reproducible generation pipelines.
+
 ## Foundation Principles
 1. Canon must be layered, not scattered.
 2. Every new asset must either reinforce continuity or be explicitly rejected.
@@ -37,6 +39,14 @@ The goal is not to store random prompts. The goal is to build a stable productio
   /automation
     /schemas
   /references
+  /datasets
+    /images
+    /text
+    /evals
+  /models
+    /adapters
+    /model_cards
+    /training_configs
   /assets
     /incoming
     /approved
@@ -65,11 +75,18 @@ Each chapter is both a narrative unit and a production unit. It needs local fold
 ### `templates/`
 Templates prevent drift in how memory is recorded. They are essential for long-term consistency and later scripting.
 
+For AI/ML work, templates also define dataset manifests and model cards so LoRA and QLoRA experiments remain traceable.
+
 ### `workflows/`
 These files define how the assistant should behave when asked to perform recurring tasks.
 
 ### `automation/`
 This is the machine-readable layer for future tools, scripts, ComfyUI pipelines, and assistant orchestration.
+
+### `datasets/` and `models/`
+These are future AI/ML engineering layers. They should not replace `assets/` or `references/`.
+
+`assets/` stores production material. `references/` records canon meaning. `datasets/` stores training-ready curated examples. `models/` stores adapter metadata, model cards, training configs, and evaluation results.
 
 ### `qa/`
 Continuity and mythology review need their own permanent place. QA is part of creation, not something added at the end.
@@ -78,7 +95,7 @@ Continuity and mythology review need their own permanent place. QA is part of cr
 Raw images, approved baselines, and final deliverables should be separated from canon docs and runtime memory.
 
 ## Memory Architecture
-Leela.exe uses a five-layer memory system:
+Leela.exe uses a six-layer memory system:
 
 ### Layer 1 - Immutable Canon
 - universe rules
@@ -112,6 +129,14 @@ Leela.exe uses a five-layer memory system:
 - style drift reports
 - mythology integrity checks
 
+### Layer 6 - Model / Dataset Memory
+- LoRA dataset versions
+- QLoRA text example versions
+- model cards
+- evaluation prompts
+- accepted adapter strengths
+- known model failure modes
+
 ## Production Modes
 ### Mode A - Story Development
 Used when designing chapter beats, pacing, and story arcs.
@@ -127,6 +152,9 @@ Used when translating the current workflow into templates, schemas, manifests, o
 
 ### Mode E - Animation Adaptation
 Used when converting completed manga pages into shot-by-shot motion logic.
+
+### Mode F - AI/ML Training Prep
+Used when approved production material is converted into structured datasets, captions, eval prompts, LoRA experiments, QLoRA examples, or model cards.
 
 ## Long-Term Pipeline Vision
 ### Phase 1 - Manual Assisted Manga Production
@@ -144,13 +172,23 @@ Used when converting completed manga pages into shot-by-shot motion logic.
 - master model sheets
 - character LoRAs
 - style LoRAs
+- environment and motif reference packs
+- captioned training candidates
 
 ### Phase 4 - ComfyUI / Tool Integration
 - prompt templates mapped to graph inputs
 - continuity metadata passed into generation nodes
 - chapter state driving automated page prep
+- LoRA names, strengths, seeds, and reference images passed as structured inputs
 
-### Phase 5 - Animation Extension
+### Phase 5 - AI/ML Engineering Layer
+- LoRA datasets for characters, style, environments, and motifs
+- QLoRA datasets for reviews, prompt compilation, memory updates, and animation notes
+- fixed evaluation prompts before training
+- model cards for every adapter
+- training configs linked to dataset versions
+
+### Phase 6 - Animation Extension
 - page-to-shot conversion
 - shot continuity packs
 - video generation prep
@@ -162,6 +200,8 @@ Used when converting completed manga pages into shot-by-shot motion logic.
 3. Never let a chapter run out of pages before its avatar arc is resolvable.
 4. Never allow modern simulation visuals to contaminate mortal-world scenes unless intentionally framed.
 5. Never treat reference intake as casual. Every approved image changes the project state.
+6. Never train from incoming or unreviewed assets.
+7. Never register a LoRA or QLoRA without a model card, dataset version, and evaluation notes.
 
 ## What Makes The System Automation-Ready
 1. Stable folder naming
@@ -171,6 +211,7 @@ Used when converting completed manga pages into shot-by-shot motion logic.
 5. repeatable templates
 6. consistent memory update order
 7. clear QA gates
+8. traceable AI/ML datasets and model registry records
 
 ## Immediate Best Practice
 For every newly approved page in Chapter 1:

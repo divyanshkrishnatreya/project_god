@@ -29,7 +29,7 @@ automation/runtime_state.local.yaml
 
 # Workspace safety ignores
 node_modules/
-dist/
+dist/ 
 build/
 .next/
 out/

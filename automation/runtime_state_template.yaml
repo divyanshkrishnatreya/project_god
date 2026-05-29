@@ -1,26 +1,31 @@
 runtime_state:
-  active_chapter_number: 1
-  active_chapter_id: chapter_01_matsya
-  active_avatar: Matsya
-  last_approved_page_number: 1
-  next_target_page_number: 2
+  active_chapter_number: 0
+  active_chapter_id: chapter_00_placeholder
+  active_avatar: placeholder
+  last_approved_page_number: 0
+  next_target_page_number: 1
   chapter_completion_deadline_page: 10
-  active_mode: page_production
+  active_mode: idle
 
   latest_assets:
-    latest_uploaded_page: 9da91037-a938-4ca8-8a74-b7c26e12288f.png
-    latest_approved_page: 9da91037-a938-4ca8-8a74-b7c26e12288f.png
+    latest_uploaded_page: null
+    latest_approved_page: null
 
   pending_actions:
-    - generate_next_page
+    - none
+
+  current_targets:
+    target_blueprint: null
+    target_prompt: null
+    target_review: null
 
   locked_context:
-    page_1_is_canon: true
+    page_1_is_canon: false
     mortal_world_ui_elements_allowed: false
-    vaikuntha_ui_elements_allowed: true
+    vaikuntha_ui_elements_allowed: false
 
   continuity_flags:
     unresolved_character_identity_questions:
-      - maternal_figure_name_unknown
-    pacing_risk: low
-    style_drift_risk: moderate_if_new_pages_ignore_page_1_render_density
+      - none
+    pacing_risk: unknown
+    style_drift_risk: unknown

@@ -49,6 +49,9 @@ The chapter can openly show that Vishnu manages the simulation from Vaikuntha, b
 ### Title
 Chapter 1: The First Login (Matsya Avatar)
 
+### Canonical Asset
+`assets/approved/pages/chapter_01_page_01.png`
+
 ### Structural Function
 Page 1 acts as a prologue page. It introduces child Vishnu as a direct on-page character, establishes the admin simulation metaphor, creates a domestic interruption, shows world collapse when the simulation is paused, and ends with narrated Matsya myth panels.
 
@@ -111,16 +114,16 @@ None locked for continuing characters.
 
 ## Page Log
 ### Page 1
-- status: provided baseline
+- status: provided baseline, normalized into production structure
 - objective: establish simulation premise and Matsya chapter framing
 - final beat: Matsya preserves life, knowledge, and Dharma through the flood
 - continuity notes: hybrid domestic-divine framing plus mythic recap montage
 
 ### Page 2
-- status: pending
-- objective: not generated yet
-- final beat: not generated yet
-- continuity notes: default path is to enter mythic timeline fully unless redirected
+- status: generation-ready packet drafted
+- objective: enter Manu's world, establish sacred calm, and introduce the first water-borne omen
+- final beat: planned ambiguous river response hinting at Matsya without full reveal
+- continuity notes: default path enters mythic timeline fully; keep page quieter than page 1, avoid explicit divine exposure, and route generated output into `reviews/page_02_review.md`
 
 ### Page 3
 - status: pending

@@ -3,6 +3,8 @@
 ## Project Identity
 Leela.exe is a long-form mythology-based manga and future anime pipeline built around one rule above all others: every page belongs to a persistent cinematic universe.
 
+The project is also being prepared as an AI/ML production system where approved pages, continuity reviews, prompts, and memory updates become future training material for LoRA, QLoRA, evaluation, and automation.
+
 The story premise is fixed:
 - the universe is a sacred simulation engine
 - child Vishnu maintains it from Vaikuntha
@@ -16,6 +18,7 @@ The story premise is fixed:
 5. chapter-level pacing
 6. modular long-term scalability
 7. automation readiness
+8. AI/ML dataset and model lineage
 
 ## Series Format
 - total chapters: 10
@@ -46,6 +49,14 @@ The story premise is fixed:
 - `automation/runtime_state_template.yaml`
 - `automation/schemas/`
 
+### AI/ML Engineering Layer
+- `docs/ai_ml_engineering_strategy.md`
+- `templates/dataset_manifest_template.yaml`
+- `templates/model_card_template.md`
+- future `datasets/`
+- future model registry and adapter cards
+- LoRA, QLoRA, evaluation, and ComfyUI integration planning
+
 ### QA Layer
 - `qa/`
 - chapter `reviews/` folders
@@ -71,6 +82,13 @@ See `workflows/` and `automation/command_registry.yaml` for the canonical defini
 - active avatar: Matsya
 - page 1 baseline image is already registered in continuity memory
 
+## AI/ML Direction
+LoRA is the visual consistency path for characters, style, environments, and sacred motifs.
+
+QLoRA is the language/automation path for continuity review, prompt compilation, memory updates, and animation notes.
+
+The project should not train adapters from unreviewed or one-off assets. Approved pages must first become traceable reference packs with captions, metadata, and evaluation prompts.
+
 ## Recommended Working Loop
 1. read canon and memory
 2. generate next page blueprint
@@ -80,7 +98,10 @@ See `workflows/` and `automation/command_registry.yaml` for the canonical defini
 6. repeat until page 10 resolves the chapter
 
 ## Primary Orientation Files
-- [docs/production_foundation.md](/e:/self/project%20vishnu/docs/production_foundation.md)
-- [continuity/memory_architecture.md](/e:/self/project%20vishnu/continuity/memory_architecture.md)
-- [automation/pipeline_manifest.yaml](/e:/self/project%20vishnu/automation/pipeline_manifest.yaml)
-- [workflows/page_production_cycle.md](/e:/self/project%20vishnu/workflows/page_production_cycle.md)
+- [learn.md](learn.md)
+- [docs/production_foundation.md](docs/production_foundation.md)
+- [docs/ai_ml_engineering_strategy.md](docs/ai_ml_engineering_strategy.md)
+- [docs/future_roadmap.md](docs/future_roadmap.md)
+- [continuity/memory_architecture.md](continuity/memory_architecture.md)
+- [automation/pipeline_manifest.yaml](automation/pipeline_manifest.yaml)
+- [workflows/page_production_cycle.md](workflows/page_production_cycle.md)

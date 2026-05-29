@@ -1,0 +1,35 @@
+runtime_state:
+  active_chapter_number: 1
+  active_chapter_id: chapter_01_matsya
+  active_avatar: Matsya
+  last_approved_page_number: 1
+  next_target_page_number: 2
+  chapter_completion_deadline_page: 10
+  active_mode: page_production
+
+  latest_assets:
+    latest_uploaded_page: seed_reference.png
+    latest_approved_page: assets/approved/pages/chapter_01_page_01.png
+    next_expected_asset: assets/incoming/pages/chapter_01_page_02.png
+
+  pending_actions:
+    - generate_page_02_image
+    - analyze_page_02_continuity
+    - update_chapter_01_memory
+
+  current_targets:
+    target_blueprint: chapters/chapter_01_matsya/pages/page_02_blueprint.md
+    target_prompt: chapters/chapter_01_matsya/prompts/page_02_generation_packet.md
+    target_review: chapters/chapter_01_matsya/reviews/page_02_review.md
+
+  locked_context:
+    page_1_is_canon: true
+    mortal_world_ui_elements_allowed: false
+    vaikuntha_ui_elements_allowed: true
+    page_2_mode: mythic_timeline_entry
+
+  continuity_flags:
+    unresolved_character_identity_questions:
+      - maternal_figure_name_unknown
+    pacing_risk: low
+    style_drift_risk: moderate_if_new_pages_ignore_page_1_render_density
