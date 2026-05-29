@@ -26,6 +26,9 @@ chapters/*/assets/incoming/
 # Local automation/runtime scratch files if added later
 automation/runtime_state.local.yaml
 
+# Local interview prep notes
+learn.md
+
 
 # Workspace safety ignores
 node_modules/
