@@ -1,6 +1,8 @@
 # Leela.exe Production System
 
 Long-form mythology manga/anime production workspace for the Vishnu/Dashavatar story system.
+ 
+![Project preview](whatsapp-preview.jpg)
 
 ## Project Identity
 
